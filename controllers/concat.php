@@ -1,3 +1,5 @@
 <?php
-$heading="Contant";
+
+$heading="Contact";
+
 require('views/concat.view.php');
