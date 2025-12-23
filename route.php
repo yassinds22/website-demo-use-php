@@ -18,9 +18,12 @@ $url = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 // echo $route[$url];
 $route=[
-    '/website/demo/'=> 'controllers/concat.php',
-    '/website/demo/concat'=> 'controllers/about.php',
+    '/website/demo/'=> 'controllers/index.php',
     '/website/demo/about'=>'controllers/about.php',
+    '/website/demo/notes'=>'controllers/notes.php',
+    '/website/demo/note'=>'controllers/note.php',
+    '/website/demo/concat'=> 'controllers/concat.php',
+    
 ];
 
 function routeToController($url,$route){
