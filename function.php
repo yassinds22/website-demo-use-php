@@ -13,3 +13,10 @@ function urlIs($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
 }
+
+ function authorize($condation , $tatues=Respones::FORBIDDEN){
+    if(! $condation){
+        abort($tatues);
+    }
+
+}

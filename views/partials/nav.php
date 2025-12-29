@@ -8,10 +8,10 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/website/demo/" class="<?php echo urlIs('/website/demo/') || urlIs('/website/demo/') || urlIs('/website/demo') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Home</a>
-              <a href="/website/demo/concat"  class="<?php echo urlIs('/website/demo/concat') || urlIs('/website/demo/concat.php') ? 'bg-gray-900 text-white' : 'text-gray-300';  ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Concat</a>
-              <a href="/website/demo/notes"  class="<?php echo urlIs('/website/demo/notes') || urlIs('/website/demo/concat.php') ? 'bg-gray-900 text-white' : 'text-gray-300';  ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Notes</a>
-              <a href="/website/demo/about" class="<?php echo urlIs('/website/demo/about') || urlIs('/website/demo/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">About</a>
+              <a href="/index" class="<?php echo urlIs('/') || urlIs('/index') || urlIs('/index') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Home</a>
+              <a href="/concat"  class="<?php echo urlIs('/concat') || urlIs('/concat.php') ? 'bg-gray-900 text-white' : 'text-gray-300';  ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Concat</a>
+              <a href="/notes"  class="<?php echo urlIs('/notes') || urlIs('/concat.php') ? 'bg-gray-900 text-white' : 'text-gray-300';  ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Notes</a>
+              <a href="/about" class="<?php echo urlIs('/about') || urlIs('/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">About</a>
             
             </div>
           </div>

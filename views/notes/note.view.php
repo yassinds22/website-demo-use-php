@@ -6,15 +6,8 @@
 
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-<?php foreach($notes as $data):?>
-
-  <li>
-    <a href="/website/demo/note?id=<?= $data['id'] ?>" class="text-blue-500 hover:underline">
-    <?= $data['title'] ?></li>
-</a>
-
-
-  <?php endforeach  ?>
+      <p><a href="/website/demo/notes" class="text-red-500">go to back...</a></p>
+<p><?= htmlspecialchars($note['title'] ) ?></p>
 
 
     </div>

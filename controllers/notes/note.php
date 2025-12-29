@@ -8,16 +8,17 @@ $note=$db->query('select * from notes where id= :id',[
    
     'id'=>$_GET['id'],
     
-])->fetch();
+])->findOrFelid();
+// dd($note);
 $currentUserId=1;
+authorize($note['user_id'] ===$currentUserId);
+
 
 if(!$note){
     abort(Respones::NOT_FOUND);
 
 }
-if($note['user_id'] !==$currentUserId){
-    abort(Respones::FORBIDDEN );
-}
+
 
 
 

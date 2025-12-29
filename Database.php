@@ -2,6 +2,7 @@
 
 class Database{
     public $connection;
+    public$statement;
     public function __construct($config,$username='root',$password=''){
        
        $dns='mysql:' .http_build_query($config,'',';');
@@ -17,10 +18,27 @@ class Database{
     
 
   public function query($query ,$param=[]){
-    $statement = $this->connection->prepare($query);
-    $statement->execute($param); // تنفيذ الاستعلام
-    return $statement;
+    $this->statement = $this->connection->prepare($query);
+    $this->statement->execute($param); // تنفيذ الاستعلام
+    return $this;
       // جلب النتائج
+}
+public function find(){
+  return $this->statement->fetch();
+
+}
+
+public function get(){
+  return $this->statement->fetchAll();
+
+}
+public function findOrFelid(){
+ $result=$this->find();
+ if(!$result){
+  abort();
+ }
+ return $result;
+
 }
 
   
