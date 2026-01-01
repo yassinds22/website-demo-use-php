@@ -1,5 +1,9 @@
 <?php
 
-$heading="Contact";
 
-require('views/concat.view.php');
+
+
+
+ view('concat.view.php',[
+    'heading'=>'Concat'
+ ]);

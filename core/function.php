@@ -20,3 +20,16 @@ function urlIs($value)
     }
 
 }
+
+function base_path($path){
+    return BASE_PATH . $path;
+
+}
+
+ function view($path,$attrbuets=[])
+ {
+    extract($attrbuets);
+    // dd($foo);
+    require base_path('views/' . $path);
+
+}

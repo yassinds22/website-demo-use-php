@@ -1,9 +1,20 @@
 <?php
+//define('BASE_PATH', dirname(__DIR__));
+const BASE_PATH = __DIR__ . '/../';
 
-require 'function.php';
-require 'Respones.php';
-require 'Database.php';
-require 'route.php';
+
+//var_dump(BASE_PATH);
+require BASE_PATH .'function.php';
+// require base_path('Respones.php');
+// require base_path('Database.php');
+spl_autoload_register(function($class){
+     require base_path( "core/{$class }.php");
+
+});
+require base_path( 'route.php');
+
+
+
 
 
 

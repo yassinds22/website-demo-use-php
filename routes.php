@@ -1,11 +1,13 @@
 <?php
 
+
 return[
-    '/'=> 'controllers/index.php',
+    '/index'=> 'controllers/index.php',
     '/about'=>'controllers/about.php',
-    '/notes'=>'controllers/notes/notes.php',
-    '/note'=>'controllers/notes/note.php',
+    '/notes'=>'controllers/notes/index.php',
+    '/note'=>'controllers/notes/show.php',
     '/create-notes'=>'controllers/notes/create.php',
     '/concat'=> 'controllers/concat.php',
     
 ];
+

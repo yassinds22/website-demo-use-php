@@ -1,5 +1,5 @@
 <?php
-$config=require ('config.php');
+$config=require base_path('config.php');
 $db=new Database($config['database']);
 
 $heading="My Note";
@@ -24,6 +24,9 @@ if(!$note){
 
 
 
-require('views/note.view.php');
+ view('notes/show.view.php',[
+    'heading'=>'Show Us',
+    'note'=>$note,
+]);
 
 
