@@ -4,14 +4,15 @@ const BASE_PATH = __DIR__ . '/../';
 
 
 //var_dump(BASE_PATH);
-require BASE_PATH .'function.php';
+require BASE_PATH .'Core/function.php';
 // require base_path('Respones.php');
 // require base_path('Database.php');
 spl_autoload_register(function($class){
-     require base_path( "core/{$class }.php");
+    dd($class);
+     require base_path( "Core/{$class }.php");
 
 });
-require base_path( 'route.php');
+require base_path( 'Core/route.php');
 
 
 

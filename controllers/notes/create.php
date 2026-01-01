@@ -1,5 +1,6 @@
 <?php
-require_once base_path('Validator.php');
+use Core\Database;
+require_once base_path('Core/Validator.php');
 
 
 
